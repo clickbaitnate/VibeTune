@@ -31,10 +31,5 @@ Feel free to contribute to this project. All contributions are welcomed. Fork th
 
 This project is licensed under the GPLV3 License. See `LICENSE.md` for more details.
 
-## Acknowledgments 🙏
-
-- Hat tip to anyone whose code was used
-- Inspiration
-- etc.
 
 Made with ❤️ by Nathan A.M.
