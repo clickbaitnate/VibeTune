@@ -1,0 +1,68 @@
+body {
+    background-image: url('backgrounds/background1.png'); /* Adjust the path accordingly */
+    background-repeat: repeat;
+    background-size: 300px 300px;
+    background-color: black;
+    color: #f1f1f1;
+    font-family: "Arial", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+#gridContainer {
+    max-width: 800px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+    gap: 20px;
+    background: radial-gradient(circle at top left, #3e4443ec, #222222f8);
+    border-radius: 10px;
+    border: 3px solid #4d4d4d;
+    margin-top:2%;
+    box-shadow: 3px 8px 3px rgba(0, 0, 0, 0.7);
+}
+
+#interface {
+    flex: 1;
+    padding: 20px;
+}
+
+#rightSideUI {
+    flex: 1;
+    padding: 20px;
+}
+
+#brainwaveInfo {
+    flex-basis: calc(50% - 10px);
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    border-radius: 5px;
+    flex-grow: 1;
+}
+
+button, input[type="range"], select {
+    background-color: #2a0d50;
+    border: none;
+    border-radius: 16px;
+    color: #fff;
+    padding: 10px;
+    margin: 5px;
+    cursor: crosshair !important;
+}
+
+input[type="range"] {
+    -webkit-appearance: none;
+    width: 100%;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    background: #777;
+    border-radius: 50%;
+    height: 20px;
+    width: 20px;
+}

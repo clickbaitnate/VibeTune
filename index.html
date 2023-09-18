@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Binaural Beats WebApp</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+
+    <div id="gridContainer">
+        
+        <button id="startStop">Start</button>
+
+        <div id="interface">
+            <div>
+                <label for="volume">Volume: <span id="volumeValue">100%</span></label>
+                <input type="range" id="volume" min="0" max="100" value="100">
+            </div>
+
+            <div>
+                <label for="brainwave">Brainwave: <span id="brainwaveValue">Alpha</span></label>
+                <input type="range" id="brainwave" min="0" max="4" value="2">
+            </div>
+
+            <div id="waves">
+                <label for="waveType">Wavetype: <span id="waveTypeValue">sine</span></label>
+                <input type="range" id="waveType" min="0" max="2" value="0" step="0.01">
+            </div>
+
+            <div>
+                <label for="pitch">Pitch (Hz): <span id="pitchValue">440 (A4)</span></label>
+                <input type="range" id="pitch" min="100" max="800" value="440" step="1">
+            </div>
+
+            <div>
+                <label for="bgSlider">Background: <span id="bgSliderValue">1</span></label>
+                <input type="range" id="bgSlider" min="1" max="7" value="1">
+            </div>
+
+            <div>
+                <label for="buttonColorSlider">Button Color: <span id="buttonColorValue"></span></label>
+                <input type="range" id="buttonColorSlider" min="0" max="360" value="0">
+            </div>
+            
+            
+
+        </div>
+
+        <div id="rightSideUI">
+            <div id="filter">
+                <label for="filterType">Filter Type:</label>
+                <select id="filterType">
+                    <option value="lowpass">Lowpass</option>
+                    <option value="highpass">Highpass</option>
+                </select>
+                <label for="filterFrequency">Filter Frequency (Hz): <span id="filterFrequencyValue">1000</span></label>
+                <input type="range" id="filterFrequency" min="20" max="5000" value="1000" step="10">
+            </div>
+
+            <div id="delay">
+                <label for="delayToggle">Delay Effect: </label>
+                <button id="delayToggle">Off</button>
+                <label for="delayTime">Delay Time (seconds): <span id="delayTimeValue">0.5</span></label>
+                <input type="range" id="delayTime" min="0" max="5" value="0.5" step="0.1">
+            </div>
+
+            <div id="noiseButtons">
+                <button onclick="toggleNoise('white')">Toggle White Noise</button>
+                <button onclick="toggleNoise('pink')">Toggle Pink Noise</button>
+                <button onclick="toggleNoise('brown')">Toggle Brown Noise</button>
+            </div>
+
+            <div>
+                <label>Noise Volume:</label>
+                <input type="range" id="noiseVolume" min="0" max="100">
+            </div>
+        </div>
+
+        <div id="brainwaveInfo">
+            <h2 id="brainwaveTitle" style="color: blue;">Alpha</h2>
+            <p id="brainwaveDescription">
+                Alpha waves (around 10 Hz) bridge the conscious and subconscious mind. Dominant in states of peaceful relaxation, they aid learning and mind-body integration.
+            </p>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
