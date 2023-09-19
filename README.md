@@ -1,13 +1,13 @@
 # VibeTune 🎧
 
-VibeTune is a binaural beats software crafted with love by Nathan A.M. Enter the realm of chill vibes, focus, or meditation with just a click.
+VibeTune is a binaural beats synthesizer crafted with love by Nathan A.M. Enter the realm of chill vibes, focus, or meditation with just a click.
 
 ## Features 🌟
 
 - Adjustable binaural beats frequency
-- Customizable background and button colors
-- Start and stop functionality
-- Background image rotation for that extra vibe
+- Customizable background and UI colors
+- White Noise Generator
+- Info about each Brainwave
 
 ## Getting Started 🚀
 
